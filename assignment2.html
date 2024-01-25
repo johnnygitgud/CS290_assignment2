@@ -1,22 +1,22 @@
 <!--Need these CSS attributes
-    class attribute, 
-    class selector, 
+    class attribute: X 
+    class selector: X 
     id attribute, 
     id selector, 
     role attribute, 
     attribute selectors,
-    font family, 
+    font family:X 
     font size:X 
     font style: X 
-    font variant, 
-    font weight, 
+    font variant: 
+    font weight:X 
     font property shorthand, 
     text align, 
     text decoration, 
     line height: X 
     color (in a few ways): X 
-    border and shorthand, 
-    padding and shorthand, 
+    border and shorthand: X
+    padding and shorthand: X 
     margin and shorthand. -->
     <!DOCTYPE html>
     <html lang = "en">
@@ -34,13 +34,15 @@
         <body style="background: black">
             <h1 align="center" style="color: darkgreen">OverTheWire Bandit Level 0-1 Writeup</h1>
 
-            <p align = "center" style="color: darkgreen"> Welcome to Johnny Bandit's walkthrough of Level 0 to Level 1 of the OvertheWire Wargames. The OvertheWire site has a variety of different wargames and the Bandit section is a great way to start especially if you have no prior experience.<br>
+            <div class="container">
+            <p align = "center" class="containee"> Welcome to Johnny Bandit's walkthrough of Level 0 to Level 1 of the OvertheWire Wargames. The OvertheWire site has a variety of different wargames and the Bandit section is a great way to start especially if you have no prior experience.<br>
              It is very likely that you are struggling connecting to the first level and that is alright. It may even be your first time using a command line/terminal as well and that's okay. Every Bandit challenge will require you to connect to another computer via SSH. <br>
              While I recommend reading more about SSH, it is simply a method of connectinga and using another computer via the internet. There won't be a modern desktop with buttons to click. Only text to interact with. The command line window will be your best friend.<br>
              This walkthrough is meant to get true beginners acquainted with the command line and to get them to make their first ssh connection to OTW's bandit0 challenge.The commands you type in that window will help you complete each challenge.<br> 
              There are a few ways to access the command line on your computer. If you are on Windows simply type "cmd" in your search bar. On a Mac you can type "terminal" in your spotlight. <br> 
              You can install Putty on your computer as an alternative. You may also set up a virtual machine with any Linux distribution as well. My suggestion is to simply use what is already on your device's operating system.<br>   
             </p>
+        </div>
             <br><br>
             <p align = "center" style="color: darkgreen"> Once you have found your terminal/command line you should see something like this. <br>
                <a href="command_line_screenshot.PNG">
@@ -67,7 +69,7 @@
 
             </h4>
 
-            <p align="center" style="color: darkgreen">Pay close attention and you will notice that the cursor prompt has changed. It started with a different username. Now it is bandit0@bandit:~$<br>
+            <p align="center" id ="last-p">Pay close attention and you will notice that the cursor prompt has changed. It started with a different username. Now it is bandit0@bandit:~$<br>
             This is good news because that means you have established your first SSH connection to a remote computer and if you have never used Linux before, you are now.<br>
             Remember this is how you connect to each challenge moving forward the difference is that the username and password will change for every challenge<br>
             Now we can move forward with solving Level 0 and getting you to Level 1. You will use the commands "ls" and "cat". There's a lot of background knowledge for each command you will come accross.<br>
