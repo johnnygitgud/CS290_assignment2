@@ -1,0 +1,5 @@
+/* Paragraph border style */
+p {border-width: 4px 4px;border-style: solid;border-color: darkgreen;}
+
+/* Paragraph font */
+p {font-size: 125%;line-height: 100%; font-style: normal;}

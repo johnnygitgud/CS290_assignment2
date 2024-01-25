@@ -6,14 +6,15 @@
     role attribute, 
     attribute selectors,
     font family, 
-    font size, 
-    font style, 
+    font size:X 
+    font style: X 
     font variant, 
     font weight, 
     font property shorthand, 
     text align, 
     text decoration, 
-    line height, color (in a few ways), 
+    line height: X 
+    color (in a few ways): X 
     border and shorthand, 
     padding and shorthand, 
     margin and shorthand. -->
@@ -26,51 +27,52 @@
         <!-- <style>
             table {border: 3px dashed red;}
             td {border: 1px solid black;}
-        </style> -->
-    
-        </head>
-        <body>
-            <h1 align="center">OverTheWire Bandit Level 0-1 Writeup</h1>
+        </style>This a sample of how it can in the html file. This is being moved to a CSS file. -->
+        <link rel="stylesheet" href="css_code.css">
 
-            <p align = "center"> Welcome to Johnny Bandit's walkthrough of Level 0 to Level 1 of the OvertheWire Wargames. The OvertheWire site has a variety of different wargames and the Bandit section is a great way to start especially if you have no prior experience.<br>
+        </head>
+        <body style="background: black">
+            <h1 align="center" style="color: darkgreen">OverTheWire Bandit Level 0-1 Writeup</h1>
+
+            <p align = "center" style="color: darkgreen"> Welcome to Johnny Bandit's walkthrough of Level 0 to Level 1 of the OvertheWire Wargames. The OvertheWire site has a variety of different wargames and the Bandit section is a great way to start especially if you have no prior experience.<br>
              It is very likely that you are struggling connecting to the first level and that is alright. It may even be your first time using a command line/terminal as well and that's okay. Every Bandit challenge will require you to connect to another computer via SSH. <br>
-             While I recommend reading more about SSH, it is simply a method of connectinga and using another computer via the internet. There won't be modern desktop with buttons to click. Only text to interact with. The command line window will be your best friend.<br>
+             While I recommend reading more about SSH, it is simply a method of connectinga and using another computer via the internet. There won't be a modern desktop with buttons to click. Only text to interact with. The command line window will be your best friend.<br>
              This walkthrough is meant to get true beginners acquainted with the command line and to get them to make their first ssh connection to OTW's bandit0 challenge.The commands you type in that window will help you complete each challenge.<br> 
              There are a few ways to access the command line on your computer. If you are on Windows simply type "cmd" in your search bar. On a Mac you can type "terminal" in your spotlight. <br> 
              You can install Putty on your computer as an alternative. You may also set up a virtual machine with any Linux distribution as well. My suggestion is to simply use what is already on your device's operating system.<br>   
             </p>
             <br><br>
-            <p align = "center"> Once you have found your terminal/command line you should see something like this <br>
+            <p align = "center" style="color: darkgreen"> Once you have found your terminal/command line you should see something like this. <br>
                <a href="command_line_screenshot.PNG">
                <img lang="en" src="command_line_screenshot.PNG" alt="sample pic of windows cmd" width="906px" height="268px">
                </a>
             </p>
 
-            <h3 align ="center">This is the ssh command you will use to connect to Bandit0: ssh bandit0@bandit.labs.overthewire.org -p 2220><br>
+            <h3 align ="center" style="color: darkgreen">This is the ssh command you will use to connect to Bandit0: ssh bandit0@bandit.labs.overthewire.org -p 2220><br>
                 <a href="ssh_command.PNG">
                     <img lang="en" src="ssh_command.PNG" alt="sample pic of windows cmd" width="1157px" height="117px">
                     </a>
             </h3><br>
-            <h3 align="center">Make sure you type this command correctly otherwise you will get an error message. If all goes well you will see this on your screen.<br>
-                As you attempt to type the password you will notice that won't be able to see what you are typing. That is normal and it will always be like this. <br>
+            <h3 align="center" style="color: darkgreen">Make sure you type this command correctly otherwise you will get an error message. If all goes well you will see this on your screen.<br>
+                As you attempt to type the password you will notice that you are not be able to see what you are typing. That is normal and it will always be like this. <br>
                 CAUTION: The first password is short and easy but future passowrds will be long and complex. Make sure to copy/paste them in the future and save them somewhere safe.<br>
                 <a href="OTW_password_prompt.PNG">
                     <img lang="en" src="OTW_password_prompt.PNG" alt="sample pic of windows cmd" width="1458px" height="407px">
                     </a>
                 </h3>
-            <h4 align="center">If you entered the password correctly then you will see this.<br>
+            <h4 align="center" style="color: darkgreen">If you entered the password correctly then you will see this.<br>
                 <a href="OTW_welcome_screen.PNG">
                     <img lang="en" src="OTW_welcome_screen.PNG" alt="sample pic of windows cmd" width="983px" height="1873px">
                     </a>
 
             </h4>
 
-            <p align="center">Pay close attention and you will notice that the cursor prompt has changed. It started with a different username. Now it is bandit0@bandit:~$<br>
+            <p align="center" style="color: darkgreen">Pay close attention and you will notice that the cursor prompt has changed. It started with a different username. Now it is bandit0@bandit:~$<br>
             This is good news because that means you have established your first SSH connection to a remote computer and if you have never used Linux before, you are now.<br>
             Remember this is how you connect to each challenge moving forward the difference is that the username and password will change for every challenge<br>
             Now we can move forward with solving Level 0 and getting you to Level 1. You will use the commands "ls" and "cat". There's a lot of background knowledge for each command you will come accross.<br>
-            Part of the fun is exploration so you won't get an in depth explanation for the commands used. Simply "ls" is used to show a list of files on the scrren and "cat" is to display a file's contents.<br>
-            Use the commands as shown by the image below and you will get the password for the next challenge. You will see I'm not providing the passwrod here. Good Luck and Have Fun!<br><br>
+            Part of the fun is exploration so you won't get an in depth explanation for the commands used in this challenge. Simply "ls" is used to show a list of files on the scrren and "cat" is to display a file's contents.<br>
+            Use the commands as shown by the image below and you will get the password for the next challenge. I'm not providing the password here. Good Luck and Have Fun!<br><br>
             <a href="OTW_bandit0_commands_used.PNG">
                 <img lang="en" src="OTW_bandit0_commands_used.PNG" alt="sample pic of windows cmd" width="560px" height="118px">
                 </a>
